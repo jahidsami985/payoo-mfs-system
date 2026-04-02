@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+
+    <title>Document</title><link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <section>
-        <div>
+    <section class="max-w-[450px] mx-auto p-4 bg-[#F4F5F7]">
+        <div class="bg-white">
+              <div class="mt-[210px] mx-[94px] mb-[32px] ">
             <img src="assets/Logo-full.png" alt="">
         </div>
-       <div>
+       <div class="mx-[24px] mb-[289px]">
           <form>
        
-        <label for="mobile number">Mobile Number</label><br>
-        <input type="number" id="mobilenumber" placeholder="Enter your number" ><br><br>
+        <label for="mobile number" class=" text-[16px] font-medium text-[#080808]">Mobile Number</label><br>
+        <input type="number" id="mobilenumber" class="w-[338px] h-[52px] border-2 border-gray-400 bg-[#F4F5F7] rounded-xl pl-3 mt-3 " placeholder="Enter your number" ><br><br>
 
       
-        <label for="pin">$ digit pin</label><br>
-        <input type="number" id="pin" placeholder="enter 4 digit pin" ><br><br>
+        <label for="pin" class="mb-[12px] text-[16px] font-medium text-[#080808]" >4 Digit pin</label><br>
+        <input type="number" id="pin" class="w-[338px] h-[52px] border-2 border-gray-400 bg-[#F4F5F7] rounded-xl pl-3 mt-3" placeholder="enter 4 digit pin" ><br><br>
 
    
-        <button type="submit">Login</button>
+        <button type="submit" class="border-2 rounded-2xl w-[388px] h-[53px] bg-[#3B25C1] text-white font-semibold">Login</button>
     </form>
        </div>
+        </div>
+      
   
     </section>
     
