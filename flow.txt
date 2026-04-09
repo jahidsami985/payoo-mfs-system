@@ -1,0 +1,91 @@
+🔐 Login Page
+
+Flow:
+
+User clicks Login
+(Optional) Validate input
+Redirect to Home Page
+🏠 Home Page (Default State)
+Dashboard is visible
+All forms are hidden (hidden class)
+💰 Add Money
+
+Flow:
+
+Click Add Money
+Show form
+User enters amount + method
+Click Add Money
+Update balance
+Show success message
+Return to home
+💸 Cash Out
+
+Flow:
+
+Click Cash Out
+Show form
+Enter amount
+Click Withdraw
+Check balance:
+Enough → deduct money
+Not enough → show error
+Show message
+Return to home
+🔄 Transfer Money
+
+Flow:
+
+Click Transfer
+Show form
+Enter amount + receiver
+Click Send Now
+Validate:
+Success → show message
+Error → show error
+Return to home
+🎁 Get Bonus
+
+Flow:
+
+Click Get Bonus
+Show form
+Click Claim
+Add bonus to balance
+Show success message
+🧾 Pay Bill
+
+Flow:
+
+Click Pay Bill
+Show form
+Enter bill details
+Click Pay Now
+Validate:
+Enough balance → deduct
+Not enough → error
+Show message
+📊 Transactions
+
+Flow:
+
+Click Transactions
+Show transaction history
+🧠 Global State (Important)
+let balance = 1000;
+let transactions = [];
+🎨 Tailwind + JS Behavior
+Use hidden class to show/hide sections
+element.classList.add("hidden");     // hide
+element.classList.remove("hidden");  // show
+🔁 Reusable Function (Recommended)
+function showSection(section) {
+  allSections.forEach(sec => sec.classList.add("hidden"));
+  section.classList.remove("hidden");
+}
+⚡ Core JS Tasks
+Handle clicks → addEventListener
+Read input → .value
+Update UI → textContent
+Show/hide sections → classList
+Store data → variables (balance, transactions)
