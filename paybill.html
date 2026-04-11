@@ -42,38 +42,40 @@
     
     <div class="grid grid-cols-3 gap-3 mb-[29px]">
 
+      
       <!-- Card -->
-      <div class="bg-white rounded-xl p-3 flex flex-col items-center shadow-sm">
+      <div onclick="goToAddMoney()"  class="bg-white rounded-xl p-3 flex flex-col items-center shadow-sm">
         <img src="assets/opt-1.png" class="w-8 mb-2">
-        <p class="text-sm ">Add Money</p>
+        <p id="add-money" class="text-sm">Add Money</p>
       </div>
 
-      <div class="bg-white rounded-xl p-3 flex flex-col items-center shadow-sm">
+      <div onclick="goToCashOut()" class="bg-white rounded-xl p-3 flex flex-col items-center shadow-sm">
         <img src="assets/opt-2.png" class="w-8 mb-2">
         <p class="text-sm">Cashout</p>
       </div>
 
-      <div class="bg-white rounded-xl p-3 flex flex-col items-center shadow-sm">
+      <div onclick="gotoTransfermoney()"class="bg-white rounded-xl p-3 flex flex-col items-center shadow-sm">
         <img src="assets/opt-3.png" class="w-8 mb-2">
         <p class="text-sm">Transfer</p>
       </div>
 
-      <div class="bg-white rounded-xl p-3 flex flex-col items-center shadow-sm">
+      <div onclick="gotoBonus()" class="bg-white rounded-xl p-3 flex flex-col items-center shadow-sm">
         <img src="assets/opt-4.png" class="w-8 mb-2">
         <p class="text-sm">Get Bonus</p>
       </div>
 
-      <div class="bg-blue-400 rounded-xl p-3 flex flex-col items-center shadow-sm">
+      <div onclick="gotoPaybill()"class="bg-white rounded-xl p-3 flex flex-col items-center shadow-sm">
         <img src="assets/opt-5.png" class="w-8 mb-2">
         <p class="text-sm">Pay Bill</p>
       </div>
 
-      <div class="bg-white rounded-xl p-3 flex flex-col items-center shadow-sm">
+      <div onclick="gotoTransections()" class="bg-white rounded-xl p-3 flex flex-col items-center shadow-sm">
         <img src="assets/opt-6.png" class="w-8 mb-2">
         <p class="text-sm">Transactions</p>
       </div>
 
     </div>
+
     </section>
     <section class="max-w-[450px] mx-auto p-4" >
         <h1 class="font-bold text-2xl text-black mb-[16px]"> Pay Bill </h1>

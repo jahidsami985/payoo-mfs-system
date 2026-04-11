@@ -1,16 +1,19 @@
    console.log("JS working");
 
-document.querySelector("form").addEventListener("submit", function(e) {
-    e.preventDefault();
+const loginForm = document.querySelector("form");
 
-    // validation here
-    const number = document.getElementById("mobilenumber").value;
-    const pin = document.getElementById("pin").value;
+if (loginForm) {
+    loginForm.addEventListener("submit", function(e) {
+        e.preventDefault();
 
-    if (number && pin) {
-        window.location.href = "home-page.html";
-    }
-});
+        const number = document.getElementById("mobilenumber").value;
+        const pin = document.getElementById("pin").value;
+
+        if (number && pin) {
+            window.location.href = "home-page.html";
+        }
+    });
+}
 
 document.querySelector("form").addEventListener("submit", function(e) {
     e.preventDefault();
